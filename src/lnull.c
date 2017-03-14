@@ -1,7 +1,7 @@
 #include "lua.h"
 
 #define _LNULL_NAME      "null"
-#define _LNULL_VERSION   "0.1.0"
+#define _LNULL_VERSION   "0.1.1-dev"
 #define _LNULL_COPYRIGHT "Copyright (C) 2017 Alexey Melnichuk"
 #define _LNULL_LICENSE   "MIT"
 
