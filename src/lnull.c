@@ -1,7 +1,7 @@
 #include "lua.h"
 
 #define _LNULL_NAME      "null"
-#define _LNULL_VERSION   "0.1.0-dev"
+#define _LNULL_VERSION   "0.1.0"
 #define _LNULL_COPYRIGHT "Copyright (C) 2017 Alexey Melnichuk"
 #define _LNULL_LICENSE   "MIT"
 
@@ -24,9 +24,9 @@ int luaopen_null(lua_State *L){
   push_null(L); lua_setfield(L, -2, "null");
 
   lua_pushliteral(L, _LNULL_NAME);      lua_setfield(L, -2, "_NAME");
-  lua_pushliteral(L, _LNULL_VERSION);   lua_setfield(L, -2, "_LVERSION");
-  lua_pushliteral(L, _LNULL_COPYRIGHT); lua_setfield(L, -2, "_LCOPYRIGHT");
-  lua_pushliteral(L, _LNULL_LICENSE);   lua_setfield(L, -2, "_LLICENSE");
+  lua_pushliteral(L, _LNULL_VERSION);   lua_setfield(L, -2, "_VERSION");
+  lua_pushliteral(L, _LNULL_COPYRIGHT); lua_setfield(L, -2, "_COPYRIGHT");
+  lua_pushliteral(L, _LNULL_LICENSE);   lua_setfield(L, -2, "_LICENSE");
 
   return 1;
 }
